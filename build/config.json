@@ -1,0 +1,85 @@
+{
+  "angel": {
+    "api_key": "YOUR_API_KEY",
+    "client_id": "YOUR_CLIENT_ID",
+    "password": "YOUR_PASSWORD",
+    "totp_secret": "YOUR_TOTP_BASE32_SECRET"
+  },
+  "symbols": [
+    {
+      "name": "RELIANCE",
+      "nse_token": "2885",
+      "bse_token": "500325",
+      "trade_qty": 10
+    },
+    {
+      "name": "TCS",
+      "nse_token": "11536",
+      "bse_token": "532540",
+      "trade_qty": 5
+    },
+    {
+      "name": "INFY",
+      "nse_token": "1594",
+      "bse_token": "500209",
+      "trade_qty": 15
+    },
+    {
+      "name": "HDFCBANK",
+      "nse_token": "1333",
+      "bse_token": "500180",
+      "trade_qty": 10
+    },
+    {
+      "name": "ITC",
+      "nse_token": "1660",
+      "bse_token": "500875",
+      "trade_qty": 50
+    }
+  ],
+  "arb": {
+    "min_net_spread_bps": 5,
+    "txn_cost_bps": 3,
+    "slippage_bps": 2,
+    "market_slippage_bps": 5,
+    "cooldown_ms": 500,
+    "min_qty_best_level": 100,
+    "top3_min_cumulative": 200
+  },
+  "exec": {
+    "hedge_deadline_ms": 100
+  },
+  "risk": {
+    "max_daily_loss": 10000,
+    "max_trades_per_day": 200,
+    "max_qty_per_symbol": 100,
+    "max_notional_per_trade": 500000
+  },
+  "feed": {
+    "heartbeat_ms": 10000,
+    "reconnect_ms": 2000
+  },
+  "telegram": {
+    "bot_token": "YOUR_BOT_TOKEN",
+    "chat_id": "YOUR_CHAT_ID",
+    "enabled": true
+  },
+  "watchdog": {
+    "max_restarts": 3,
+    "backoff_ms": [
+      5000,
+      15000,
+      30000
+    ]
+  },
+  "intelligence": {
+    "oir_min_threshold": 0.1,
+    "oir_depth_levels": 5,
+    "min_cross_ticks": 3,
+    "spread_decay_max_bps": 1.0,
+    "fill_prob_min": 0.6,
+    "fill_prob_scale_threshold": 0.85,
+    "min_qty_scale_factor": 0.5,
+    "price_move_hedge_bps": 2.0
+  }
+}

@@ -1,0 +1,3 @@
+C:\msys64\ucrt64\bin\cmake.exe -E rm -f CMakeFiles\arb_watchdog.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\arb_watchdog.dir/objects.a @CMakeFiles\arb_watchdog.dir\objects1.rsp
+C:\msys64\ucrt64\bin\c++.exe -O3 -DNDEBUG -march=native -Wl,--whole-archive CMakeFiles\arb_watchdog.dir/objects.a -Wl,--no-whole-archive -o arb_watchdog.exe -Wl,--out-implib,libarb_watchdog.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\arb_watchdog.dir\linkLibs.rsp
